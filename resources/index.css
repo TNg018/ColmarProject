@@ -1,4 +1,12 @@
 html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Universal Style */
+html {
   font-family: Helvetica, sans-serif;
 }
 
