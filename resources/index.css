@@ -1,0 +1,244 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  height: 64px;
+  padding: 0 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 strong {
+  color: silver;
+}
+
+header .logo {
+  display: inline-flex;
+  margin: auto 0;
+}
+
+header nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+header nav p {
+  margin-left: 16px;
+}
+
+header .mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 745px)  {
+  header nav,
+  header .logo {
+    display: none;
+  }
+  header .mobile-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .mobile-nav img {
+  }
+}
+
+/* Main */
+.container .main {
+  display: flex;
+  background-color: silver;
+  padding: 32px 24px;
+}
+.main .image {
+  width: 60%;
+}
+
+.main img {
+  width: 100%;
+}
+
+.main .banner {
+  width: 40%;
+  text-align: center;
+  margin-left: 24px;
+}
+
+.banner .button {
+  color: white;
+  background-color: gray;
+  padding: 8px 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .container .main {
+    flex-wrap: wrap;
+  }
+  .container .main .image,
+  .container .main .banner {
+    width: 100%;
+  }
+}
+/* Second Main */
+.information {
+  display: flex;
+  margin: 32px auto;
+}
+
+.information .left {
+  width: 60%;
+  margin: auto 24px;
+}
+
+.information img {
+  width: 100%;
+}
+
+.information .right {
+  width: 40%;
+}
+.right .item {
+  display: flex;
+  border: 1px solid silver;
+}
+
+.right .item:last-of-type {
+  background-color: silver;
+}
+
+.information .right .image {
+  height: auto;
+  width: 35%;
+  padding: 16px;
+}
+
+.information .right .text {
+  width: 65%;
+}
+
+.right .text a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .information .left {
+    display: none;
+  }
+  .information .right {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+/* Third Main */
+.courses {
+  background-color: silver;
+}
+.courses h2 {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.course-gallery {
+  display: flex;
+  margin: 0 72px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.course {
+  background-color: white;
+  width: 28%;
+  margin-bottom: 32px;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course .text {
+  padding: 16px 16px 24px 16px;
+}
+
+.course .text p {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 525px) {
+  .courses {
+    background-color: white;
+  }
+  .course-gallery {
+    margin: 16px 0 32px 0;
+  }
+  .course-gallery img,
+  .course .text p {
+    display: none;
+  }
+  .course {
+    width: 100%;
+    background-color: silver;
+    margin-bottom: 8px;
+  }
+}
+/* Fourth Main */
+.container .thesis-title {
+  text-align: center;
+}
+.thesis {
+  display: flex;
+}
+.information .title {
+  display: block;
+}
+.thesis video {
+  width: 100%;
+}
+.thesis h2 {
+  display: block;
+  width: 100%;
+}
+.thesis .item {
+  border: none;
+}
+.thesis .item:first-child {
+  background-color: silver;
+}
+.thesis .item:last-child {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .thesis .right,
+  .thesis h2,
+  .thesis p {
+    display: none;
+  }
+  .thesis .left {
+    width: 100%;
+    display: block;
+  }
+  .thesis .left video {
+    width: 100%;
+  }
+}
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid silver;
+  padding-top: 16px;
+  padding-left: 24px;
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  footer a {
+    display: none;
+  }
+}
